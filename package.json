@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "PORT=9500 COAP_CLIENT_PATH=/usr/local/bin/coap-client HUB_IP_ADDRESS=192.168.0.156 SECURITY_ID=mycode node app.js",
+    "start": "PORT=9500 COAP_CLIENT_PATH=/usr/local/bin/coap-client HUB_IP_ADDRESS=192.168.0.156 SECURITY_ID=mycode node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,8 +13,15 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-uglify": "^3.3.0",
     "memory-cache": "^0.2.0",
     "node-tradfri-argon": "^1.0.12",
     "serve-favicon": "^2.4.3"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
   }
 }
